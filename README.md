@@ -39,3 +39,4 @@ If you would like to see an example of this skill in action, you can enable the 
 
 For the Recipe Modules, <a href="https://github.com/voicehacks/Recipe"> click here</a>.
 # alexa-skill-local-recommendations
+# alexa-skill-local-recommendations
