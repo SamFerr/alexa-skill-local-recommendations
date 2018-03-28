@@ -5,71 +5,80 @@
 var languageStrings = {
     'en': {
         'translation': {
-            'WELCOME' : "Welcome to Gloucester Guide!",
+            'WELCOME' : "Welcome to Tempe City Guide!",
             'HELP'    : "Say about, to hear more about the city, or say coffee, breakfast, lunch, or dinner, to hear local restaurant suggestions, or say recommend an attraction, or say, go outside. ",
-            'ABOUT'   : "Gloucester Massachusetts is a city on the Atlantic Ocean.  A popular summer beach destination, Gloucester has a rich history of fishing and ship building.",
+            'ABOUT'   : "Tempe is a city just east of Phoenix, in Arizona.  It's known for Arizona State University, Tempe Town Lake and Tempe Beach Park.",
             'STOP'    : "Okay, see you next time!"
         }
     }
-    // , 'de-DE': { 'translation' : { 'TITLE'   : "Local Helfer etc." } }
 };
-var data = {
-    "city"        : "Gloucester",
-    "state"       : "MA",
-    "postcode"    : "01930",
-    "restaurants" : [
-        { "name":"Zeke's Place",
-            "address":"66 East Main Street", "phone": "978-283-0474",
-            "meals": "breakfast, lunch",
-            "description": "A cozy and popular spot for breakfast.  Try the blueberry french toast!"
-        },
-        { "name":"Morning Glory Coffee Shop",
-            "address":"25 Western Avenue", "phone": "978-281-1851",
-            "meals": "coffee, breakfast, lunch",
-            "description": "A homestyle diner located just across the street from the harbor sea wall."
-        },
-        { "name":"Sugar Magnolias",
-            "address":"112 Main Street", "phone": "978-281-5310",
-            "meals": "breakfast, lunch",
-            "description": "A quaint eatery, popular for weekend brunch.  Try the carrot cake pancakes."
-        },
-        { "name":"Seaport Grille",
-            "address":"6 Rowe Square", "phone": "978-282-9799",
-            "meals": "lunch, dinner",
-            "description": "Serving seafood, steak and casual fare.  Enjoy harbor views on the deck."
-        },
-        { "name":"Latitude 43",
-            "address":"25 Rogers Street", "phone": "978-281-0223",
-            "meals": "lunch, dinner",
-            "description": "Features artsy decor and sushi specials.  Live music evenings at the adjoining Minglewood Tavern."
-        },
-        { "name":"George's Coffee Shop",
-            "address":"178 Washington Street", "phone": "978-281-1910",
-            "meals": "coffee, breakfast, lunch",
-            "description": "A highly rated local diner with generously sized plates."
-        },
 
+var data = {
+    "city"        : "Tempe",
+    "state"       : "AZ",
+    // "postcode"    : "85281",
+    "restaurants" : [
+        { "name":"RigaTony's Authentic Italian Restaurant",
+            "address":"1850 E Warner Rd, Tempe, AZ 85284", "phone": "480-899-1111",
+            "meals": "lunch, dinner",
+            "description": "Family-friendly Italian restaurant with throwback decor & a menu featuring homestyle Italian faves."
+        },
+        { "name":"Four Peaks Brewing",
+            "address":"1340 E 8th St, Ste 104, Tempe, AZ", "phone": "480-303-9967",
+            "meals": "lunch, dinner",
+            "description": "This working brewery also features a sizable eatery with patio seating & a menu of burgers & pizza."
+        },
+        { "name":"Crêpe Bar",
+            "address":"7520 S Rural Rd, Tempe, AZ 85283", "phone": "480-247-8012",
+            "meals": "lunch, dinner",
+            "description": "Spare, modern cafe furnishing creative sweet & savory crêpes as well as specialty coffees & teas."
+        },
+        { "name":"Snooze an A.M. Eatery",
+            "address":"615 S College Ave #103, Tempe, AZ 8528", "phone": "480-355-1934",
+            "meals": "breakfast, coffee",
+            "description": "Vibrant, retro chain serving a seasonal menu of creative breakfast & lunch fare, plus cocktails."
+        },
+        { "name":"Cornish Pasty Co",
+            "address":"960 W University Dr #103, Tempe, AZ 85281", "phone": "480-894-6261",
+            "meals": "lunch, dinner",
+            "description": "Modern, minimalist bar/eatery cooking traditional & vegan Cornish pasties plus other English faves."
+        },
+        { "name":"The Chuckbox",
+            "address":"202 E University Dr, Tempe, AZ 85281", "phone": "480-968-4712",
+            "meals": "lunch, dinner",
+            "description": "Basic, cash-only burger joint turning out charcoal-broiled patties plus beer & wine."
+        },
+        { "name":"Haji-Baba",
+        "address":"1513 E Apache Blvd, Tempe, AZ 85281", "phone": "480-894-1905",
+        "meals": "lunch, dinner",
+        "description": "No-frills counter-serve spot serving kebabs, shawarma, gyros & more inside a Middle Eastern grocery."
+        },
+        { "name":"Garcia's Mexican Restaurant",
+        "address":"1706 E Warner Rd, Tempe, AZ 85284", "phone": "480-838-1005",
+        "meals": "lunch, dinner",
+        "description": "Regional chain outpost supplying standard Mexican meals in a colorful, family-friendly setting."
+        },
     ],
     "attractions":[
         {
-            "name": "Whale Watching",
-            "description": "Gloucester has tour boats that depart twice daily from Rogers street at the harbor.  Try either the 7 Seas Whale Watch, or Captain Bill and Sons Whale Watch. ",
+            "name": "Desert Botanical Garden",
+            "description": "The Desert Botanical Garden is a 140 acres botanical garden located in Papago Park. See all of the plant life of the desert!",
+            "distance": "3"
+        },
+        {
+            "name": "Tempe Town Lake",
+            "description": "A man-made reservoir with a park and paths to allow people to walk, jog, bike, and more along its edges. The lake is also great for electric, wind, and human powered boats.",
             "distance": "0"
         },
         {
-            "name": "Good Harbor Beach",
-            "description": "Facing the Atlantic Ocean, Good Harbor Beach has huge expanses of soft white sand that attracts hundreds of visitors every day during the summer.",
-            "distance": "2"
+            "name": "Sea Life Arizona Aquarium",
+            "description": "A 26,000 square foot aquarium containing thousands of aquatic creatures, plus interactive touch pools and a 360° ocean tunnel.",
+            "distance": "5"
         },
         {
-            "name": "Rockport",
-            "description": "A quaint New England town, Rockport is famous for rocky beaches, seaside parks, lobster fishing boats, and several art studios.",
-            "distance": "4"
-        },
-        {
-            "name": "Fenway Park",
-            "description": "Home of the Boston Red Sox, Fenway park hosts baseball games From April until October, and is open for tours. ",
-            "distance": "38"
+            "name": "Mill Avenue District",
+            "description": "A shopping, dining, and nightlife area near Arizona State University's campus. Walk up 'A' Mountain, see a show, or spend the night out on the town, you'll never be bored on Mill Ave.",
+            "distance": "0"
         }
     ]
 }
@@ -119,7 +128,7 @@ var handlers = {
         var restaurant = randomArrayElement(getRestaurantsByMeal('breakfast'));
         this.attributes['restaurant'] = restaurant.name;
 
-        var say = 'For breakfast, try this, ' + restaurant.name + '. Would you like to hear more?';
+        var say = 'For breakfast, try this, ' + restaurant.name + '. Would you like more information?';
         this.emit(':ask', say);
     },
 
@@ -127,7 +136,7 @@ var handlers = {
         var restaurant = randomArrayElement(getRestaurantsByMeal('lunch'));
         this.attributes['restaurant'] = restaurant.name;
 
-        var say = 'Lunch time! Here is a good spot. ' + restaurant.name + '. Would you like to hear more?';
+        var say = 'Lunch time! Here is a good spot. ' + restaurant.name + '. Would you like more information?';
         this.emit(':ask', say);
     },
 
@@ -135,7 +144,7 @@ var handlers = {
         var restaurant = randomArrayElement(getRestaurantsByMeal('dinner'));
         this.attributes['restaurant'] = restaurant.name;
 
-        var say = 'Enjoy dinner at, ' + restaurant.name + '. Would you like to hear more?';
+        var say = 'Enjoy your dinner at, ' + restaurant.name + '. Would you like more information?';
         this.emit(':ask', say);
     },
 
@@ -144,13 +153,12 @@ var handlers = {
         var restaurantDetails = getRestaurantByName(restaurantName);
 
         var say = restaurantDetails.name
-            + ' is located at ' + restaurantDetails.address
-            + ', the phone number is ' + restaurantDetails.phone
-            + ', and the description is, ' + restaurantDetails.description
-            + '  I have sent these details to the Alexa App on your phone.  Enjoy your meal! <say-as interpret-as="interjection">bon appetit</say-as>' ;
+            + ' is a ' + restaurantDetails.description
+            + '. Their address is ' + restaurantDetails.address
+            + ', and their phone number is ' + restaurantDetails.phone
+            + '. I have sent these details to the Alexa App on your phone.  Enjoy your meal! <say-as interpret-as="interjection">bon appetit</say-as>' ;
 
-        var card = restaurantDetails.name + '\n' + restaurantDetails.address + '\n'
-            + data.city + ', ' + data.state + ' ' + data.postcode
+        var card = restaurantDetails.name + '\n' + restaurantDetails.address
             + '\nphone: ' + restaurantDetails.phone + '\n';
 
         this.emit(':tellWithCard', say, restaurantDetails.name, card);
